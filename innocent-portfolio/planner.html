@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An academic task planner for organising study tasks and tracking progress.">
+    <title>Study Planner | Innocent Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="site-header">
+    <nav class="navbar container">
+        <a href="index.html" class="logo">Innocent<span>.</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="planner.html" class="active">Planner</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="page-heading">
+        <div class="container">
+            <span class="eyebrow">Stay Organised</span>
+            <h1>My Study Planner</h1>
+            <p>Add study tasks, set deadlines and keep track of your academic progress.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="planner-layout">
+                <section class="card">
+                    <h2 style="color:#0f172a; margin-bottom:18px;">Add a New Task</h2>
+
+                    <form id="task-form">
+                        <div class="form-group">
+                            <label for="task-title">Task title</label>
+                            <input type="text" id="task-title" name="task-title"
+                                   placeholder="e.g. Study computer fundamentals" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="task-subject">Subject or category</label>
+                            <input type="text" id="task-subject" name="task-subject"
+                                   placeholder="e.g. COS 101">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="task-date">Due date</label>
+                            <input type="date" id="task-date" name="task-date">
+                        </div>
+
+                        <button type="submit" class="btn">Add Task</button>
+                    </form>
+
+                    <div class="quote-box">
+                        <strong>Study reminder</strong>
+                        <p id="study-quote">
+                            Small, consistent efforts can lead to great results.
+                        </p>
+                        <button type="button" id="new-quote" class="btn btn-outline"
+                                style="margin-top:12px;">New Reminder</button>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2 style="color:#0f172a;">My Tasks</h2>
+                    <p id="task-summary" style="color:#64748b; margin-top:5px;">
+                        No tasks added yet.
+                    </p>
+                    <ul id="task-list" class="task-list">
+                        <li class="empty-message">Your tasks will appear here.</li>
+                    </ul>
+                    <button type="button" id="clear-completed" class="btn btn-outline"
+                            style="margin-top:18px;">Clear Completed Tasks</button>
+                </section>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>© <span class="current-year">2026</span> Innocent Portfolio. All rights reserved.</p>
+    <p>Designed and developed by Innocent Chibueze Emeh.</p>
+</footer>
+
+</body>
+</html>
